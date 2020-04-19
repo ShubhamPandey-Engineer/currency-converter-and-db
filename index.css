@@ -1,0 +1,352 @@
+*{
+box-sizing: border-box;
+}
+input{
+outline:none !important;
+}
+
+button{
+outline: none !important;
+box-shadow: none !important;
+}
+
+/*header*/
+
+.head{
+letter-spacing: 3px;
+text-align: center;
+font-size: 40px;
+text-transform: uppercase;
+font-family: serif;
+font-weight: bold;
+color:silver;
+}
+/*cancel button */
+.cancel,.cancel2{
+position:relative;
+top:-50px !important;
+}
+
+
+/*subhead label */
+
+.conversion{
+font-weight: bold;
+text-transform: uppercase;
+font-size:25px;
+}
+
+
+.convert{
+display: flex;
+}
+
+
+#convert{
+width:150px;
+letter-spacing: 3px;
+float: left;
+font-size: 25px;
+height: 50px;
+}
+
+/*header icon animation */
+.ani {
+animation-name: ani;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+width:10%;
+}
+
+body{
+overflow:hidden;
+}
+/* answer */
+.current{
+border-bottom: 3px solid steelblue;
+text-align: center;
+padding: 0px;
+width:60% !important;
+font-size:50px;
+margin:auto;
+}
+
+/*reverse icon */
+#swap{
+z-index:999;
+width:10%;
+color:steelblue;
+border-radius:50%;
+display:block !important;
+font-size: 80px;
+}
+
+#swap:hover{
+cursor:pointer;
+
+}
+/*nav -links*/
+
+
+.nav-links{
+color:white !important;
+font-weight: bolder;
+font-size: 20px;
+padding: 0px !important;
+list-style: none;
+position: relative;
+float: right;
+margin-left: 25px;
+display: inline-block;
+}
+
+
+.nav-links:hover{
+color:black !important;
+cursor:pointer;
+}
+
+/* divs   amount to from*/
+.rightnav,.a,.b,.c{
+margin-top: 20px;
+margin-left: 20px;
+}
+/*nav-links parent*/
+.rightnav{
+position: relative;
+bottom:20px;
+text-align: right;
+display: flex;
+}
+
+.a{
+margin-left: 20px;
+
+}
+
+.convert button{
+font-size: 40px;
+padding:0px;
+color:white;
+width:200px;
+height: 65%;
+}
+.nav-link:hover{
+
+color:black;
+}
+
+/* button register */
+#regis{
+position: relative;
+top:-40px;
+font-weight: bold;
+color:white;
+text-decoration: none;
+left:150px;
+}
+/* button cancel*/
+.cancel{
+top:-30px;
+position: relative;
+float: right;
+}
+.cancel2{
+position: relative;
+float: right;
+}
+
+/* user input */
+#no{
+width:200px;
+border-radius: 12px;
+font-weight: bolder;
+font-size: 30px;
+height: 100px;
+}
+
+/*login and  sign up divs*/
+
+.outerParent,.outer{
+z-index: 1;
+transition-property: ease-in-out;
+background: steelblue;
+display: none;
+position:fixed;
+margin-top:100px !important;
+margin:auto;
+bottom:10px;
+left:30%;
+box-shadow: 0px 0px 10px silver;
+width:40% !important;
+border-radius: 12px;
+padding:25px;
+}
+/*label*/
+
+.retry{
+display: block;
+}
+/* alert waring*/
+
+.alert{
+color:red;
+margin-bottom:10px;
+padding:0!important;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.main{
+margin-top:20px;
+box-shadow: 0 0 15px silver;
+}
+.class{
+display: block;
+}
+.login{
+display: block;
+
+}
+
+
+/*form subhead */
+.labels{
+font-size: 1.2rem;
+margin-bottom: 0px !important;
+font-weight: bold;
+margin-top:40px;
+text-transform: uppercase;
+letter-spacing: 2px;	
+font-family:helvetica;
+font-weight: bold;
+width:30%;
+display: block;
+}
+
+
+/*header bg*/
+.navheader{
+background:linear-gradient(rgb(50,80,180),rgb(60,120,225));
+}
+
+.items:hover{
+background: red;
+}
+
+
+.userinput{
+border:none;
+border-bottom:2px solid gray !important;
+letter-spacing: 2px;
+color:steelblue;
+font-family: helvetica;
+font-weight: bold;
+border-radius: 10px;
+padding:10px;
+display:block;
+width:70%;
+margin-top:10px;
+margin-bottom:10px
+height: 40px;
+
+}
+.showpassword{
+height: 35px;
+width:30%;
+margin-top:10px;
+margin-bottom: 0px;
+visibility: hidden;
+display: block;
+color:white;
+font-weight: bold;
+}
+
+.submit{
+font-weight: bold;
+
+display: block;
+}
+.submit:hover{
+background: white;
+color:green;
+font-weight: bold;
+}
+.userinput:hover{
+border-bottom:2px solid skyblue;
+}
+#passcheck{
+display: none;
+}
+
+/*mobile devices*/
+
+@media screen and (max-width:480px)
+
+{
+
+.labels{
+margin-top:18px !important;
+}
+
+.cancel1{
+position:relative;
+top:-50px;
+}
+.cancel,.cancel2{
+position:relative;
+top:-50px !important;
+}
+
+#no{
+margin-top: 10px;		height: 60px;
+}
+.convert{
+display:block;
+}
+
+.conversion{
+margin-right: 12px;
+width:30%;
+}
+
+/*reverse*/
+#swap{
+text-align: center;
+width:80%;
+}
+/*warning*/
+.alert{
+padding:0px !important;
+visibility:hidden;
+margin-bottom:3px;
+}
+.current{
+width:100%  !important;
+padding:0px;
+font-size: 25px;
+justify-content: center;
+margin:0px !important;
+}
+.outer,.outerParent{
+width:80% !important;
+height:400px;
+position: absolute;
+left:30px;
+
+}
+
+
+
+
+.userinput{
+border-radius: 8px !important;
+
+width:95% ;
+}
+.main{
+margin-top:5px !important;
+margin-bottom:20px;
+width:95%;
+}
+
+}
